@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>NEW COURSE OFFERS</title>
+</head>
+<style>
+div{
+text-align:center;
+background:darkblue;
+color:white;
+border:5px solid gold;
+text-shadow:5px 5px black;
+box-shadow:10px 10px grey;
+margine:25px solid red;
+padding:25px 25px;
+}
+img{
+text-align:left;
+border:2px solid gold;
+}
+button{
+background:gold;
+color:red;
+height:50px;
+border:2px solid black;
+padding:10px 10px;
+button-size:auto;
+}
+button:hover
+{
+background:white;
+color:green;
+height:50px;
+width:120px;
+}
+td{
+background:gold;
+color:red;
+height:50px;
+border:2px solid black;
+padding:5px 5px;
+}
+td.not
+{
+background:red;
+color:black;
+height:50px;
+border:2px solid black;
+padding:5px 5px;
+}
+
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
+</script>
+<body><div>
+<img src="C:\Users\GAMECHANGER\OneDrive\Desktop\jas1105\OneDrive\Pictures\logo-cg.png" width=200 height=200>
+<h1>LOYOLA COLLEGE (AUTONOMYUS),CHENNAI<br>
+SILVER JUBILEE<br>
+25 YEARS OF B.C.A</h1></div>
+<p>
+<marquee>HERE ALL THE 25 YEAR OF BCA FAMOUS COURSES ARE AVAILABLE</marquee>
+<table ng-app="" ng-init="a11=0;a12=0;a13=0;a14=0;b11=0;b12=0;b13=0;b14=0;c11=0;c12=0;c13=0;c14=0;d11=0;d12=0;d13=0;d14=0;e11=0;e12=0;e13=0;e14=0;qty=0">
+</tr>
+<tr>
+<td><b>COURSE:DATA STRUCTURE</br>DURATION:6 month</b></br></br> Price:800<input type="number" maxnumber="1" data-ng-model="a11"/></td>
+<td><b>COURSE:MOBILE COMPUTING</br>DURATION:90 days</b></br></br>Price:300<input type="number" maxnumber="1" data-ng-model="a12"/></td>
+<td><b>COURSE:ARTIFICIAL INTELIGENCE</br>DURATION:10 month</b></br></br>Price:1500<input type="number" maxnumber="1" data-ng-model="a13"/></td>
+<td><b>COURSE:CLOUD COMPUTING</br>DURATION:7 month</b></br></br>Price:850<input type="number" maxnumber="1" data-ng-model="a14"/></td>	
+</tr>
+<tr>
+<td><b>COURSE:DATA COMMUNICATION</br>DURATION:2 month</b></br></br>Price:350<input type="number" maxnumber="1" data-ng-model="b11"/></td>
+<td><b>COURSE:PYTHON EXPERT</br>DURATION:6 month</b></br></br>Price:2390<input type="number" maxnumber="1" data-ng-model="b12"/></td>
+<td><b>COURSE:ADVANCE JAVA</br>DURATION:5 month</b></br></br>Price:1250<input type="number" maxnumber="1" data-ng-model="b13"/></td>
+<td><b>COURSE:EPR</br>DURATION:3 month</b></br></br>Price:1050<input type="number" maxnumber="1" maxnumber="1"data-ng-model="b14"/></td>
+</tr>
+
+<tr>
+<td><b>COURSE:PERSONALITY DEVELOPMENT</br>DURATION:90 days</b></br></br>Price:1300<input type="number" maxnumber="1" data-ng-model="c11"/></td>
+<td><b>COURSE:APTITUDE</br>DURATION:45 days</b></br></br>Price:1000<input type="number" maxnumber="1" data-ng-model="c12"/></td>
+<td><b>COURSE:SOFT SKILLS AND COMMUNICATION</br>DURATION:130 days month</b></br></br>Price:1080<input type="number" maxnumber="1" data-ng-model="c13"/></td>
+<td><b>COURSE:WEB PROGRAMMING WITH PHP AND MYSQL</br>DURATION:6 month</b></br></br>Price:3500<input type="number" maxnumber="1" data-ng-model="c14"/></td>
+
+</tr>
+<tr>
+<td><b>COURSE:VISUAL PROGRAMMING</br>DURATION:4 month</b></br></br>Price:1040<input type="number" maxnumber="1" data-ng-model="d11"/></td>
+<td><b>COURSE:RELATIONAL DATABASE MANAGEMENT SYSTEM</br>DURATION:6 month</b></br></br>Price:4040<input type="number" maxnumber="1" data-ng-model="d12"/></td>
+<td><b>COURSE:SOFTWARE TESTING</br>DURATION:5 month</b></br></br>Price:2540<input type="number" maxnumber="1" data-ng-model="d13"/></td>
+<td><b>COURSE:SOFTWARE ENGINEERING</br>DURATION:7 month</b></br></br>Price:4950<input type="number" maxnumber="1" data-ng-model="d14"/></td>
+</tr>
+<tr><th colspan="4">LIMITED TIME FREE COURSE</th></tr>
+<tr>
+<td><b>COURSE:FRENCH</br>DURATION:4 month</b></br></br>Price:FREE<input type="number" maxnumber="1" data-ng-model="e11"/></td>
+<td><b>COURSE:OPERATION RESEARCH</br>DURATION:6 month</b></br></br>Price:FREE<input type="number" maxnumber="1" data-ng-model="e12"/></td>
+<td><b>COURSE:OPERATING SYSTEM</br>DURATION:5 month</b></br></br>Price:FREE<input type="number" maxnumber="1" data-ng-model="e13"/></td>
+<td><b>COURSE:C BEGINNER</br>DURATION:7 month</b></br></br>Price:FREE<input type="number" maxnumber="1" data-ng-model="e14"/></td>
+</tr>
+<tr  ng-app="" ng-init="am11=800;am12=300;am13=1500;am14=850;bm11=350;bm12=2390;bm13=1250;bm14=1050;cm11=1300;cm12=1000;cm13=1080;cm14=3500;dm11=1040;dm12=4040;dm13=2540;dm14=4950;tot=0">
+<td style="background-color:white" colspan="2">QUALTITY:{{qty=a11+a12+a13+a14+b11+b12+b13+b14+c11+c12+c13+c14+d11+d12+d13+d14+e11+e12+e13+e14}}
+<td style="background-color:white" colspan="2">
+AMOUNT:{{tot=(a11*am11)+(a12*am12)+(a13*am13)+(a14*am14)+(b11*bm11)+(b12*bm12)+(b13*bm13)+(b14*bm14)+(c11*cm11)+(c12*cm12)+(c13*cm13)+(c14*cm14)+(d11*dm11)+(d12*dm12)+(d13*dm13)+(d14*dm14)}}
+</tr>
+</table>
+</p>
+<a href="C:\Users\GAMECHANGER\OneDrive\Desktop\html\payment.html">
+<button>BILL</button>
+</a>
+<a href="C:\Users\GAMECHANGER\OneDrive\Desktop\html\silver.html">
+<button>HOME</button>
+</a>
+</body>
+</html>

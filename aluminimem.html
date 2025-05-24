@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>ALUMNI MEMBERSHIP</title>
+</head>
+<style>
+p{
+background-color:darkblue;
+color:skyblue;
+border-radius:10px;
+width:450px;
+height:20px;
+font-size:17px;
+text-align:center;
+}
+form{
+background-color:darkblue;
+color:white;
+padding:5px 5px;
+font-size:19px;
+text-align:center;
+position:absolute;
+top:380;
+left:600px;
+BORDER-RADIUS:10PX;
+border:2px solid black;
+box-shadow:4px 4px gray;
+}
+</style>
+<body>
+<center><img src="C:\Users\GAMECHANGER\OneDrive\Desktop\jas1105\OneDrive\Pictures\logo-cg.png" width=200 height=200>
+<h1>LOYOLA COLLEGE (AUTONOMYUS),CHENNAI<br>
+SILVER JUBILEE<br>
+25 YEARS OF B.C.A</h1></center>
+<form>
+<label>NAME:</label><input type="text"></br>
+<label>DEPARTMENT NUMBER:</label><input type="text"></br>
+<label>MOBILE NUMBER:</label><input type="number" maxlength="10" minlength="1"></br>
+<label>EMAIL ID:</label><input type="email"></br></br>
+Create a strong password:</br>
+<label>PASSWORD:</label><input type="password" placeholder="Password"></br>
+<label>PASSWORD:</label><input type="password" placeholder="Password"></br></br>
+<button id="but4" onclick="bty()">CREATE</button></br>
+<p id="msg"></p>
+<script>
+function bty()
+{
+document.getElementById('msg').innerHTML="SUCCESSFULLY REGISTERED AS ALUMINI";
+document.getElementById("but4").disabled=true;
+}
+</script>
+
+</form>
+</body>
+</html>

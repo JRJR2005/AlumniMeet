@@ -1,0 +1,122 @@
+<html>
+<head>
+<title>
+Market</title>
+</head>
+<style>
+div{
+text-align:center;
+background:darkblue;
+color:white;
+border:5px solid gold;
+text-shadow:5px 5px black;
+box-shadow:10px 10px grey;
+margine:25px solid red;
+padding:25px 25px;
+}
+img{
+text-align:left;
+border:2px solid gold;
+}
+button{
+background:gold;
+color:red;
+height:50px;
+border:2px solid black;
+padding:10px 10px;
+button-size:auto;
+}
+button:hover
+{
+background:white;
+color:green;
+height:50px;
+width:120px;
+}
+td{
+background:gold;
+color:red;
+height:50px;
+border:2px solid black;
+padding:5px 5px;
+}
+td.not
+{
+background:red;
+color:black;
+height:50px;
+border:2px solid black;
+padding:5px 5px;
+}
+
+}
+marquee
+{
+border:5px solid gold;
+background:darkblue;
+color:gold;
+height:50px;
+padding:5px 5px;
+font-size:50px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
+</script>
+<body><div>
+<img src="C:\Users\GAMECHANGER\OneDrive\Desktop\jas1105\OneDrive\Pictures\logo-cg.png" width=200 height=200>
+<h1>LOYOLA COLLEGE (AUTONOMYUS),CHENNAI<br>
+SILVER JUBILEE<br>
+25 YEARS OF B.C.A</h1></div>
+<p>
+<marquee>HERE ALL THE 25 YEAR OF BCA PRODUCTS ARE AVAILABLE</marquee>
+<table ng-app="" ng-init="a11=0;a12=0;a13=0;a14=0;b11=0;b12=0;b13=0;b14=0;c11=0;c12=0;c13=0;c14=0;d11=0;d12=0;d13=0;d14=0;qty=0">
+<tr>
+<th>T-SHIRTS</th>
+<th>COFFEE MUG</th>
+<th>WATER BOTTLE</th>
+<th>ALBUM BOOK</th>
+</tr>
+<tr>
+<td><img src="C:\Users\GAMECHANGER\OneDrive\Desktop\jas1105\OneDrive\Pictures\pic8.jpeg" width=200></br> Price:150<input type="number" minnumber="1" data-ng-model="a11"/></td>
+<td><img src="C:\Users\GAMECHANGER\OneDrive\Desktop\jas1105\OneDrive\Pictures\pic11.jpeg" width=200></br>Price:170<input type="number" minnumber="1" data-ng-model="a12"/></td>
+<td><img src="C:\Users\GAMECHANGER\OneDrive\Desktop\jas1105\OneDrive\Pictures\pic15.jpg" width=200></br>Price:100<input type="number" minnumber="1" data-ng-model="a13"/></td>
+<td><img src="C:\Users\GAMECHANGER\OneDrive\Desktop\jas1105\OneDrive\Pictures\pic18.jpg" width=200></br>Price:350<input type="number" minnumber="1" data-ng-model="a14"/></td>	
+
+</tr>
+<tr>
+<td><img src="C:\Users\GAMECHANGER\OneDrive\Desktop\jas1105\OneDrive\Pictures\pic9.jpeg" width=200></br>Price:250<input type="number" minnumber="1" data-ng-model="b11"/></td>
+<td><img src="C:\Users\GAMECHANGER\OneDrive\Desktop\jas1105\OneDrive\Pictures\pic12.jpg" width=200></br>Price:135<input type="number" minnumber="1" data-ng-model="b12"/></td>
+<td><img src="C:\Users\GAMECHANGER\OneDrive\Desktop\jas1105\OneDrive\Pictures\pic16.jpeg" width=200></br>Price:125<input type="number" minnumber="1" data-ng-model="b13"/></td>
+<td><img src="C:\Users\GAMECHANGER\OneDrive\Desktop\jas1105\OneDrive\Pictures\pic18.jpg" width=200></br>Price:350<input type="number" minnumber="1" data-ng-model="b14"/></td>
+
+</tr>
+
+<tr>
+<td><img src="C:\Users\GAMECHANGER\OneDrive\Desktop\jas1105\OneDrive\Pictures\pic10.jpg" width=200></br>Price:300<input type="number" minnumber="1" data-ng-model="c11"/></td>
+<td><img src="C:\Users\GAMECHANGER\OneDrive\Desktop\jas1105\OneDrive\Pictures\pic13.jpeg" width=200></br>Price:100<input type="number" minnumber="1" data-ng-model="c12"/></td>
+<td><img src="C:\Users\GAMECHANGER\OneDrive\Desktop\jas1105\OneDrive\Pictures\pic17.jpg" width=200></br>Price:180<input type="number" minnumber="1" data-ng-model="c13"/></td>
+<td><img src="C:\Users\GAMECHANGER\OneDrive\Desktop\jas1105\OneDrive\Pictures\pic18.jpg" width=200></br>Price:350<input type="number" minnumber="1" data-ng-model="c14"/></td>
+
+</tr>
+<tr>
+<td id="not">Out Of Stock:<input type="number" minnumber="1" data-ng-model="d11"/></td>
+<td><img src="C:\Users\GAMECHANGER\OneDrive\Desktop\jas1105\OneDrive\Pictures\pic14.jpeg" width=200></br>Price:140<input type="number" minnumber="1" data-ng-model="d12"/></td>
+<td id="not">Out Of Stock:<input type="number" minnumber="1" data-ng-model="d13"/></td>
+<td><img src="C:\Users\GAMECHANGER\OneDrive\Desktop\jas1105\OneDrive\Pictures\pic18.jpg" width=200></br>Price:350<input type="number" minnumber="1" data-ng-model="d14"/></td>
+
+</tr>
+<tr  ng-app="" ng-init="am11=150;am12=170;am13=1000;am14=350;bm11=250;bm12=135;bm13=125;bm14=350;cm11=300;cm12=100;cm13=180;cm14=350;dm11=0;dm12=140;dm13=0;dm14=350;tot=350">
+<td style="background-color:white" colspan="2">QUALTITY:{{qty=a11+a12+a13+a14+b11+b12+b13+b14+c11+c12+c13+c14+d11+d12+d13+d14}}
+<td style="background-color:white" colspan="2">
+AMOUNT:{{tot=(a11*am11)+(a12*am12)+(a13*am13)+(a14*am14)+(b11*bm11)+(b12*bm12)+(b13*bm13)+(b14*bm14)+(c11*cm11)+(c12*cm12)+(c13*cm13)+(c14*cm14)+(d11*dm11)+(d12*dm12)+(d13*dm13)+(d14*dm14)}}
+</tr>
+</table>
+</p>
+<a href="C:\Users\GAMECHANGER\OneDrive\Desktop\html\payment.html">
+<button>BILL</button>
+</a>
+<a href="C:\Users\GAMECHANGER\OneDrive\Desktop\html\silver.html">
+<button>HOME</button>
+</a>
+</body>
+</html>

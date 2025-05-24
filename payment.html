@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>PAYMENT</title>
+</head>
+<style>
+div{
+text-align:center;
+background:darkblue;
+color:white;
+border:5px solid gold;
+text-shadow:5px 5px black;
+box-shadow:10px 10px grey;
+margine:25px solid red;
+padding:25px 25px;
+}
+button{
+background:gold;
+color:red;
+height:50px;
+border:2px solid black;
+padding:10px 10px;
+button-size:auto;
+}
+button:hover
+{
+background:white;
+color:green;
+height:50px;
+width:120px;
+}
+p
+{
+width:190px;
+padding:5px 5px;
+color:white;
+background-color:darkblue;
+}
+input.{
+width:100px;
+height:40px;
+color:white;
+background-color:darkblue;
+}
+</style>
+
+<body>
+<h1>PAYMENT GATEWAY:</h1>
+<form>
+<label>MODE OF PAY:</label></br>
+<input type="radio" id="rad"><button id="but1" onclick="debit()">Debit Card</button></br>
+<input type="radio" id="rad"><button id="but2" onclick="credit()">Credit Card</button></br>
+<input type="radio" id="rad"><button id="but3" onclick="vow()">Voucher</button></br>
+<input type="radio" id="rad"><button id="but4" onclick="netbank()">Net Banking</button></br>
+
+<script>
+function debit()
+{
+document.getElementById('demo').innerHTML="Enter the Debit Card Details";
+var x=document.createElement("INPUT");
+x.setAttribute("type","number");
+x.setAttribute("value","Card Number");
+x.setAttribute("minlength","1");
+x.setAttribute("maxlength","10");
+x.setAttribute("placeholder","Card Number");
+document.body.appendChild(x);
+
+var y=document.createElement("INPUT");
+y.setAttribute("type","number");
+y.setAttribute("value","Card PIN Number");
+y.setAttribute("placeholder","PIN");
+y.setAttribute("minlength","1");
+y.setAttribute("maxlength","10");
+document.body.appendChild(y);
+document.getElementById('but1').disabled=true;
+ var z=document.createElement("INPUT");
+z.setAttribute("type","Submit");
+z.setAttribute("value","PAY");
+document.body.appendChild(z);
+
+
+}
+function credit()
+{
+document.getElementById('demo').innerHTML="Enter the Credit Card Details";
+var x=document.createElement("INPUT");
+x.setAttribute("type","number");
+x.setAttribute("value","Card Number");
+x.setAttribute("placeholder","Card Number");
+x.setAttribute("minlength","1");
+x.setAttribute("maxlength","10");
+document.body.appendChild(x);
+
+var y=document.createElement("INPUT");
+y.setAttribute("type","number");
+y.setAttribute("value","Card PIN Number");
+y.setAttribute("placeholder","PIN");
+y.setAttribute("minlength","1");
+y.setAttribute("maxlength","10");
+document.body.appendChild(y);
+document.getElementById('but2').disabled=true;
+var z=document.createElement("INPUT");
+z.setAttribute("type","Submit");
+z.setAttribute("value","PAY");
+document.body.appendChild(z);
+
+
+}
+function vow()
+{
+document.getElementById('demo').innerHTML="Enter the Reedem number";
+var y=document.createElement("INPUT");
+y.setAttribute("type","text");
+y.setAttribute("placeholder","Reedeem Code");
+y.setAttribute("minlength","1");
+y.setAttribute("maxlength","10");
+document.body.appendChild(y);
+document.getElementById('but3').disabled=true;
+ var z=document.createElement("INPUT");
+z.setAttribute("type","Submit");
+z.setAttribute("value","PAY");
+document.body.appendChild(z);
+
+}
+function netbank()
+{
+document.getElementById('demo').innerHTML="SCAN THE CODE:";
+var y=document.createElement("IMG");
+y.setAttribute("src","https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/800px-QR_code_for_mobile_English_Wikipedia.svg.png");
+y.setAttribute("width","200");
+y.setAttribute("height","200");
+y.setAttribute("border","5px","solid","black");
+document.body.appendChild(y);
+document.getElementById('but4').disabled=true;
+var z=document.createElement("INPUT");
+z.setAttribute("type","Submit");
+z.setAttribute("value","PAY");
+document.body.appendChild(z);
+}
+</script>
+</form>
+<hr></hr>
+<p id="demo">None</p>
+<hr></hr>
+
+<a href="C:\Users\GAMECHANGER\OneDrive\Desktop\html\payment.html">
+<button>Clear</button>
+</a></br></br></br>
+</body>
+</html>

@@ -1,0 +1,4091 @@
+<html>
+<head>
+<title>Seat PreBooking</title>
+</head>
+<style>
+td
+{
+border:2px solid black;
+background-color:darkblue;
+}
+
+th
+{
+border:2px solid black;
+height:40px;
+background-color:grey;
+}
+button
+{
+color:green;
+background-color:gold;
+width:50px;
+height:20px;
+}
+</style>
+<body>
+<table>
+<tr>
+<th id="stage" colspan="44">STAGE</th></tr>
+<th>ROW-1:</th>
+<th rowspan="2">PRICE:600</th>
+<td><button onclick="row1seat1()" id="rad1">ADD</button><td>
+<td><button onclick="row1seat2()" id="rad2">ADD</button><td>
+<td><button onclick="row1seat3()" id="rad3">ADD</button><td>
+<td><button onclick="row1seat4()" id="rad4">ADD</button><td>
+<td><button onclick="row1seat5()" id="rad5">ADD</button><td>
+<td><button onclick="row1seat6()" id="rad6">ADD</button><td>
+<td><button onclick="row1seat7()" id="rad7">ADD</button><td>
+<td><button onclick="row1seat8()" id="rad8">ADD</button><td>
+<td><button onclick="row1seat9()" id="rad9">ADD</button><td>
+<td><button onclick="row1seat10()" id="rad10">ADD</button><td>
+<td colspan="2"><td>
+<td><button onclick="row1seat11()" id="rad11">ADD</button><td>
+<td><button onclick="row1seat12()" id="rad12">ADD</button><td>
+<td><button onclick="row1seat13()" id="rad13">ADD</button><td>
+<td><button onclick="row1seat14()" id="rad14">ADD</button><td>
+<td><button onclick="row1seat15()" id="rad15">ADD</button><td>
+<td><button onclick="row1seat16()" id="rad16">ADD</button><td>
+<td><button onclick="row1seat17()" id="rad17">ADD</button><td>
+<td><button onclick="row1seat18()" id="rad18">ADD</button><td>
+<td><button onclick="row1seat19()" id="rad19">ADD</button><td>
+<td><button onclick="row1seat20()" id="rad20">ADD</button><td>
+</tr>
+<th>ROW-2:</th>
+<td><button onclick="row2seat1()" id="row2rad1">ADD</button><td>
+<td><button onclick="row2seat2()" id="row2rad2">ADD</button><td>
+<td><button onclick="row2seat3()" id="row2rad3">ADD</button><td>
+<td><button onclick="row2seat4()" id="row2rad4">ADD</button><td>
+<td><button onclick="row2seat5()" id="row2rad5">ADD</button><td>
+<td><button onclick="row2seat6()" id="row2rad6">ADD</button><td>
+<td><button onclick="row2seat7()" id="row2rad7">ADD</button><td>
+<td><button onclick="row2seat8()" id="row2rad8">ADD</button><td>
+<td><button onclick="row2seat9()" id="row2rad9">ADD</button><td>
+<td><button onclick="row2seat10()" id="row2rad10">ADD</button><td>
+<td colspan="2"><td>
+<td><button onclick="row2seat11()" id="row2rad11">ADD</button><td>
+<td><button onclick="row2seat12()" id="row2rad12">ADD</button><td>
+<td><button onclick="row2seat13()" id="row2rad13">ADD</button><td>
+<td><button onclick="row2seat14()" id="row2rad14">ADD</button><td>
+<td><button onclick="row2seat15()" id="row2rad15">ADD</button><td>
+<td><button onclick="row2seat16()" id="row2rad16">ADD</button><td>
+<td><button onclick="row2seat17()" id="row2rad17">ADD</button><td>
+<td><button onclick="row2seat18()" id="row2rad18">ADD</button><td>
+<td><button onclick="row2seat19()" id="row2rad19">ADD</button><td>
+<td><button onclick="row2seat20()" id="row2rad20">ADD</button><td>
+</tr>
+<th>ROW-3:</th>
+<th rowspan="3">PRICE:400</th>
+<td><button onclick="row3seat1()" id="row3rad1">ADD</button><td>
+<td><button onclick="row3seat2()" id="row3rad2">ADD</button><td>
+<td><button onclick="row3seat3()" id="row3rad3">ADD</button><td>
+<td><button onclick="row3seat4()" id="row3rad4">ADD</button><td>
+<td><button onclick="row3seat5()" id="row3rad5">ADD</button><td>
+<td><button onclick="row3seat6()" id="row3rad6">ADD</button><td>
+<td><button onclick="row3seat7()" id="row3rad7">ADD</button><td>
+<td><button onclick="row3seat8()" id="row3rad8">ADD</button><td>
+<td><button onclick="row3seat9()" id="row3rad9">ADD</button><td>
+<td><button onclick="row3seat10()" id="row3rad10">ADD</button><td>
+<td colspan="2"><td>
+<td><button onclick="row3seat11()" id="row3rad11">ADD</button><td>
+<td><button onclick="row3seat12()" id="row3rad12">ADD</button><td>
+<td><button onclick="row3seat13()" id="row3rad13">ADD</button><td>
+<td><button onclick="row3seat14()" id="row3rad14">ADD</button><td>
+<td><button onclick="row3seat15()" id="row3rad15">ADD</button><td>
+<td><button onclick="row3seat16()" id="row3rad16">ADD</button><td>
+<td><button onclick="row3seat17()" id="row3rad17">ADD</button><td>
+<td><button onclick="row3seat18()" id="row3rad18">ADD</button><td>
+<td><button onclick="row3seat19()" id="row3rad19">ADD</button><td>
+<td><button onclick="row3seat20()" id="row3rad20">ADD</button><td>
+</tr>
+<th>ROW-4:</th>
+<td><button onclick="row4seat1()" id="row4rad1">ADD</button><td>
+<td><button onclick="row4seat2()" id="row4rad2">ADD</button><td>
+<td><button onclick="row4seat3()" id="row4rad3">ADD</button><td>
+<td><button onclick="row4seat4()" id="row4rad4">ADD</button><td>
+<td><button onclick="row4seat5()" id="row4rad5">ADD</button><td>
+<td><button onclick="row4seat6()" id="row4rad6">ADD</button><td>
+<td><button onclick="row4seat7()" id="row4rad7">ADD</button><td>
+<td><button onclick="row4seat8()" id="row4rad8">ADD</button><td>
+<td><button onclick="row4seat9()" id="row4rad9">ADD</button><td>
+<td><button onclick="row4seat10()" id="row4rad10">ADD</button><td>
+<td colspan="2"><td>
+<td><button onclick="row4seat11()" id="row4rad11">ADD</button><td>
+<td><button onclick="row4seat12()" id="row4rad12">ADD</button><td>
+<td><button onclick="row4seat13()" id="row4rad13">ADD</button><td>
+<td><button onclick="row4seat14()" id="row4rad14">ADD</button><td>
+<td><button onclick="row4seat15()" id="row4rad15">ADD</button><td>
+<td><button onclick="row4seat16()" id="row4rad16">ADD</button><td>
+<td><button onclick="row4seat17()" id="row4rad17">ADD</button><td>
+<td><button onclick="row4seat18()" id="row4rad18">ADD</button><td>
+<td><button onclick="row4seat19()" id="row4rad19">ADD</button><td>
+<td><button onclick="row4seat20()" id="row4rad20">ADD</button><td>
+</tr>
+<th>ROW-5:</th>
+<td><button onclick="row5seat1()" id="row5rad1">ADD</button><td>
+<td><button onclick="row5seat2()" id="row5rad2">ADD</button><td>
+<td><button onclick="row5seat3()" id="row5rad3">ADD</button><td>
+<td><button onclick="row5seat4()" id="row5rad4">ADD</button><td>
+<td><button onclick="row5seat5()" id="row5rad5">ADD</button><td>
+<td><button onclick="row5seat6()" id="row5rad6">ADD</button><td>
+<td><button onclick="row5seat7()" id="row5rad7">ADD</button><td>
+<td><button onclick="row5seat8()" id="row5rad8">ADD</button><td>
+<td><button onclick="row5seat9()" id="row5rad9">ADD</button><td>
+<td><button onclick="row5seat10()" id="row5rad10">ADD</button><td>
+<td colspan="2"><td>
+<td><button onclick="row5seat11()" id="row5rad11">ADD</button><td>
+<td><button onclick="row5seat12()" id="row5rad12">ADD</button><td>
+<td><button onclick="row5seat13()" id="row5rad13">ADD</button><td>
+<td><button onclick="row5seat14()" id="row5rad14">ADD</button><td>
+<td><button onclick="row5seat15()" id="row5rad15">ADD</button><td>
+<td><button onclick="row5seat16()" id="row5rad16">ADD</button><td>
+<td><button onclick="row5seat17()" id="row5rad17">ADD</button><td>
+<td><button onclick="row5seat18()" id="row5rad18">ADD</button><td>
+<td><button onclick="row5seat19()" id="row5rad19">ADD</button><td>
+<td><button onclick="row5seat20()" id="row5rad20">ADD</button><td>
+</tr>
+<th>ROW-6:</th>
+<th rowspan="3">PRICE:200</th>
+<td><button onclick="row6seat1()" id="row6rad1">ADD</button><td>
+<td><button onclick="row6seat2()" id="row6rad2">ADD</button><td>
+<td><button onclick="row6seat3()" id="row6rad3">ADD</button><td>
+<td><button onclick="row6seat4()" id="row6rad4">ADD</button><td>
+<td><button onclick="row6seat5()" id="row6rad5">ADD</button><td>
+<td><button onclick="row6seat6()" id="row6rad6">ADD</button><td>
+<td><button onclick="row6seat7()" id="row6rad7">ADD</button><td>
+<td><button onclick="row6seat8()" id="row6rad8">ADD</button><td>
+<td><button onclick="row6seat9()" id="row6rad9">ADD</button><td>
+<td><button onclick="row6seat10()" id="row6rad10">ADD</button><td>
+<td colspan="2"><td>
+<td><button onclick="row6seat11()" id="row6rad11">ADD</button><td>
+<td><button onclick="row6seat12()" id="row6rad12">ADD</button><td>
+<td><button onclick="row6seat13()" id="row6rad13">ADD</button><td>
+<td><button onclick="row6seat14()" id="row6rad14">ADD</button><td>
+<td><button onclick="row6seat15()" id="row6rad15">ADD</button><td>
+<td><button onclick="row6seat16()" id="row6rad16">ADD</button><td>
+<td><button onclick="row6seat17()" id="row6rad17">ADD</button><td>
+<td><button onclick="row6seat18()" id="row6rad18">ADD</button><td>
+<td><button onclick="row6seat19()" id="row6rad19">ADD</button><td>
+<td><button onclick="row6seat20()" id="row6rad20">ADD</button><td>
+
+</tr>
+<th>ROW-7:</th>
+<td><button onclick="row7seat1()" id="row7rad1">ADD</button><td>
+<td><button onclick="row7seat2()" id="row7rad2">ADD</button><td>
+<td><button onclick="row7seat3()" id="row7rad3">ADD</button><td>
+<td><button onclick="row7seat4()" id="row7rad4">ADD</button><td>
+<td><button onclick="row7seat5()" id="row7rad5">ADD</button><td>
+<td><button onclick="row7seat6()" id="row7rad6">ADD</button><td>
+<td><button onclick="row7seat7()" id="row7rad7">ADD</button><td>
+<td><button onclick="row7seat8()" id="row7rad8">ADD</button><td>
+<td><button onclick="row7seat9()" id="row7rad9">ADD</button><td>
+<td><button onclick="row7seat10()" id="row7rad10">ADD</button><td>
+<td colspan="2"><td>
+<td><button onclick="row7seat11()" id="row7rad11">ADD</button><td>
+<td><button onclick="row7seat12()" id="row7rad12">ADD</button><td>
+<td><button onclick="row7seat13()" id="row7rad13">ADD</button><td>
+<td><button onclick="row7seat14()" id="row7rad14">ADD</button><td>
+<td><button onclick="row7seat15()" id="row7rad15">ADD</button><td>
+<td><button onclick="row7seat16()" id="row7rad16">ADD</button><td>
+<td><button onclick="row7seat17()" id="row7rad17">ADD</button><td>
+<td><button onclick="row7seat18()" id="row7rad18">ADD</button><td>
+<td><button onclick="row7seat19()" id="row7rad19">ADD</button><td>
+<td><button onclick="row7seat20()" id="row7rad20">ADD</button><td>
+</tr>
+<th>ROW-8:</th>
+<td><button onclick="row8seat1()" id="row8rad1">ADD</button><td>
+<td><button onclick="row8seat2()" id="row8rad2">ADD</button><td>
+<td><button onclick="row8seat3()" id="row8rad3">ADD</button><td>
+<td><button onclick="row8seat4()" id="row8rad4">ADD</button><td>
+<td><button onclick="row8seat5()" id="row8rad5">ADD</button><td>
+<td><button onclick="row8seat6()" id="row8rad6">ADD</button><td>
+<td><button onclick="row8seat7()" id="row8rad7">ADD</button><td>
+<td><button onclick="row8seat8()" id="row8rad8">ADD</button><td>
+<td><button onclick="row8seat9()" id="row8rad9">ADD</button><td>
+<td><button onclick="row8seat10()" id="row8rad10">ADD</button><td>
+<td colspan="2"><td>
+<td><button onclick="row8seat11()" id="row8rad11">ADD</button><td>
+<td><button onclick="row8seat12()" id="row8rad12">ADD</button><td>
+<td><button onclick="row8seat13()" id="row8rad13">ADD</button><td>
+<td><button onclick="row8seat14()" id="row8rad14">ADD</button><td>
+<td><button onclick="row8seat15()" id="row8rad15">ADD</button><td>
+<td><button onclick="row8seat16()" id="row8rad16">ADD</button><td>
+<td><button onclick="row8seat17()" id="row8rad17">ADD</button><td>
+<td><button onclick="row8seat18()" id="row8rad18">ADD</button><td>
+<td><button onclick="row8seat19()" id="row8rad19">ADD</button><td>
+<td><button onclick="row8seat20()" id="row8rad20">ADD</button><td>
+</tr>
+<th>ROW-9:</th>
+<th rowspan="2">PRICE:100</th>
+<td><button onclick="row9seat1()" id="row9rad1">ADD</button><td>
+<td><button onclick="row9seat2()" id="row9rad2">ADD</button><td>
+<td><button onclick="row9seat3()" id="row9rad3">ADD</button><td>
+<td><button onclick="row9seat4()" id="row9rad4">ADD</button><td>
+<td><button onclick="row9seat5()" id="row9rad5">ADD</button><td>
+<td><button onclick="row9seat6()" id="row9rad6">ADD</button><td>
+<td><button onclick="row9seat7()" id="row9rad7">ADD</button><td>
+<td><button onclick="row9seat8()" id="row9rad8">ADD</button><td>
+<td><button onclick="row9seat9()" id="row9rad9">ADD</button><td>
+<td><button onclick="row9seat10()" id="row9rad10">ADD</button><td>
+<td colspan="2"><td>
+<td><button onclick="row9seat11()" id="row9rad11">ADD</button><td>
+<td><button onclick="row9seat12()" id="row9rad12">ADD</button><td>
+<td><button onclick="row9seat13()" id="row9rad13">ADD</button><td>
+<td><button onclick="row9seat14()" id="row9rad14">ADD</button><td>
+<td><button onclick="row9seat15()" id="row9rad15">ADD</button><td>
+<td><button onclick="row9seat16()" id="row9rad16">ADD</button><td>
+<td><button onclick="row9seat17()" id="row9rad17">ADD</button><td>
+<td><button onclick="row9seat18()" id="row9rad18">ADD</button><td>
+<td><button onclick="row9seat19()" id="row9rad19">ADD</button><td>
+<td><button onclick="row9seat20()" id="row9rad20">ADD</button><td>
+</tr>
+<th>ROW-10:</th>
+<td><button onclick="row10seat1()" id="row10rad1">ADD</button><td>
+<td><button onclick="row10seat2()" id="row10rad2">ADD</button><td>
+<td><button onclick="row10seat3()" id="row10rad3">ADD</button><td>
+<td><button onclick="row10seat4()" id="row10rad4">ADD</button><td>
+<td><button onclick="row10seat5()" id="row10rad5">ADD</button><td>
+<td><button onclick="row10seat6()" id="row10rad6">ADD</button><td>
+<td><button onclick="row10seat7()" id="row10rad7">ADD</button><td>
+<td><button onclick="row10seat8()" id="row10rad8">ADD</button><td>
+<td><button onclick="row10seat9()" id="row10rad9">ADD</button><td>
+<td><button onclick="row10seat10()" id="row10rad10">ADD</button><td>
+<td colspan="2"><td>
+<td><button onclick="row10seat11()" id="row10rad11">ADD</button><td>
+<td><button onclick="row10seat12()" id="row10rad12">ADD</button><td>
+<td><button onclick="row10seat13()" id="row10rad13">ADD</button><td>
+<td><button onclick="row10seat14()" id="row10rad14">ADD</button><td>
+<td><button onclick="row10seat15()" id="row10rad15">ADD</button><td>
+<td><button onclick="row10seat16()" id="row10rad16">ADD</button><td>
+<td><button onclick="row10seat17()" id="row10rad17">ADD</button><td>
+<td><button onclick="row10seat18()" id="row10rad18">ADD</button><td>
+<td><button onclick="row10seat19()" id="row10rad19">ADD</button><td>
+<td><button onclick="row10seat20()" id="row10rad20">ADD</button><td>
+</tr>
+</table>
+<script>
+function row1seat1()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('rad1').style.opacity=0.3;
+	document.getElementById('rad1').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row1seat2()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('rad2').style.opacity=0.3;
+	document.getElementById('rad2').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row1seat3()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('rad3').style.opacity=0.3;
+	document.getElementById('rad3').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row1seat4()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('rad4').style.opacity=0.3;
+	document.getElementById('rad4').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row1seat5()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('rad5').style.opacity=0.3;
+	document.getElementById('rad5').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row1seat6()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('rad6').style.opacity=0.3;
+	document.getElementById('rad6').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row1seat7()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('rad7').style.opacity=0.3;
+	document.getElementById('rad7').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row1seat8()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('rad8').style.opacity=0.3;
+	document.getElementById('rad8').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row1seat9()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('rad9').style.opacity=0.3;
+	document.getElementById('rad9').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row1seat10()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('rad10').style.opacity=0.3;
+	document.getElementById('rad10').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row1seat11()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('rad11').style.opacity=0.3;
+	document.getElementById('rad11').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row1seat12()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('rad12').style.opacity=0.3;
+	document.getElementById('rad12').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row1seat13()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('rad13').style.opacity=0.3;
+	document.getElementById('rad13').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row1seat14()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('rad14').style.opacity=0.3;
+	document.getElementById('rad14').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row1seat15()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('rad15').style.opacity=0.3;
+	document.getElementById('rad15').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row1seat16()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('rad16').style.opacity=0.3;
+	document.getElementById('rad16').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row1seat17()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('rad17').style.opacity=0.3;
+	document.getElementById('rad17').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row1seat18()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('rad18').style.opacity=0.3;
+	document.getElementById('rad18').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row1seat19()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('rad19').style.opacity=0.3;
+	document.getElementById('rad19').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row1seat20()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('rad20').style.opacity=0.3;
+	document.getElementById('rad20').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+
+function row2seat1()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('row2rad1').style.opacity=0.3;
+	document.getElementById('row2rad1').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row2seat2()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('row2rad2').style.opacity=0.3;
+	document.getElementById('row2rad2').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row2seat3()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('row2rad3').style.opacity=0.3;
+	document.getElementById('row2rad3').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row2seat4()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('row2rad4').style.opacity=0.3;
+	document.getElementById('row2rad4').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row2seat5()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('row2rad5').style.opacity=0.3;
+	document.getElementById('row2rad5').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row2seat6()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('row2rad6').style.opacity=0.3;
+	document.getElementById('row2rad6').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row2seat7()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('row2rad7').style.opacity=0.3;
+	document.getElementById('row2rad7').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row2seat8()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('row2rad8').style.opacity=0.3;
+	document.getElementById('row2rad8').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row2seat9()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('row2rad9').style.opacity=0.3;
+	document.getElementById('row2rad9').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row2seat10()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('row2rad10').style.opacity=0.3;
+	document.getElementById('row2rad10').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row2seat11()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('row2rad11').style.opacity=0.3;
+	document.getElementById('row2rad11').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row2seat12()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('row2rad12').style.opacity=0.3;
+	document.getElementById('row2rad12').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row2seat13()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('row2rad13').style.opacity=0.3;
+	document.getElementById('row2rad13').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row2seat14()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('row2rad14').style.opacity=0.3;
+	document.getElementById('row2rad14').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row2seat15()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('row2rad15').style.opacity=0.3;
+	document.getElementById('row2rad15').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row2seat16()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('row2rad16').style.opacity=0.3;
+	document.getElementById('row2rad16').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row2seat17()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('row2rad17').style.opacity=0.3;
+	document.getElementById('row2rad17').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row2seat18()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('row2rad18').style.opacity=0.3;
+	document.getElementById('row2rad18').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row2seat19()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('row2rad19').style.opacity=0.3;
+	document.getElementById('row2rad19').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row2seat20()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 600";
+	document.getElementById('row2rad20').style.opacity=0.3;
+	document.getElementById('row2rad20').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+
+function row3seat1()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row3rad1').style.opacity=0.3;
+	document.getElementById('row3rad1').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row3seat2()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row3rad2').style.opacity=0.3;
+	document.getElementById('row3rad2').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row3seat3()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row3rad3').style.opacity=0.3;
+	document.getElementById('row3rad3').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row3seat4()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row3rad4').style.opacity=0.3;
+	document.getElementById('row3rad4').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row3seat5()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row3rad5').style.opacity=0.3;
+	document.getElementById('row3rad5').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row3seat6()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row3rad6').style.opacity=0.3;
+	document.getElementById('row3rad6').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row3seat7()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row3rad7').style.opacity=0.3;
+	document.getElementById('row3rad7').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row3seat8()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row3rad8').style.opacity=0.3;
+	document.getElementById('row3rad8').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row3seat9()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row3rad9').style.opacity=0.3;
+	document.getElementById('row3rad9').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row3seat10()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row3rad10').style.opacity=0.3;
+	document.getElementById('row3rad10').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row3seat11()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row3rad11').style.opacity=0.3;
+	document.getElementById('row3rad11').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row3seat12()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row3rad12').style.opacity=0.3;
+	document.getElementById('row3rad12').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row3seat13()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row3rad13').style.opacity=0.3;
+	document.getElementById('row3rad13').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row3seat14()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row3rad14').style.opacity=0.3;
+	document.getElementById('row3rad14').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row3seat15()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row3rad15').style.opacity=0.3;
+	document.getElementById('row3rad15').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row3seat16()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row3rad16').style.opacity=0.3;
+	document.getElementById('row3rad16').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row3seat17()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row3rad17').style.opacity=0.3;
+	document.getElementById('row3rad17').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row3seat18()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row3rad18').style.opacity=0.3;
+	document.getElementById('row3rad18').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row3seat19()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row3rad19').style.opacity=0.3;
+	document.getElementById('row3rad19').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row3seat20()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row3rad20').style.opacity=0.3;
+	document.getElementById('row3rad20').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+
+
+function row4seat1()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row4rad1').style.opacity=0.3;
+	document.getElementById('row4rad1').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row4seat2()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row4rad2').style.opacity=0.3;
+	document.getElementById('row4rad2').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row4seat3()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row4rad3').style.opacity=0.3;
+	document.getElementById('row4rad3').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row4seat4()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row4rad4').style.opacity=0.3;
+	document.getElementById('row4rad4').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row4seat5()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row4rad5').style.opacity=0.3;
+	document.getElementById('row4rad5').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row4seat6()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row4rad6').style.opacity=0.3;
+	document.getElementById('row4rad6').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row4seat7()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row4rad7').style.opacity=0.3;
+	document.getElementById('row4rad7').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row4seat8()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row4rad8').style.opacity=0.3;
+	document.getElementById('row4rad8').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row4seat9()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row4rad9').style.opacity=0.3;
+	document.getElementById('row4rad9').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row4seat10()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row4rad10').style.opacity=0.3;
+	document.getElementById('row4rad10').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row4seat11()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row4rad11').style.opacity=0.3;
+	document.getElementById('row4rad11').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row4seat12()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row4rad12').style.opacity=0.3;
+	document.getElementById('row4rad12').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row4seat13()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row4rad13').style.opacity=0.3;
+	document.getElementById('row4rad13').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row4seat14()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row4rad14').style.opacity=0.3;
+	document.getElementById('row4rad14').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row4seat15()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row4rad15').style.opacity=0.3;
+	document.getElementById('row4rad15').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row4seat16()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row4rad16').style.opacity=0.3;
+	document.getElementById('row4rad16').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row5seat17()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row4rad17').style.opacity=0.3;
+	document.getElementById('row4rad17').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row4seat18()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row4rad18').style.opacity=0.3;
+	document.getElementById('row4rad18').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row4seat19()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row4rad19').style.opacity=0.3;
+	document.getElementById('row4rad19').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row4seat20()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row4rad20').style.opacity=0.3;
+	document.getElementById('row4rad20').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+
+function row5seat1()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row5rad1').style.opacity=0.3;
+	document.getElementById('row5rad1').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row5seat2()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row5rad2').style.opacity=0.3;
+	document.getElementById('row5rad2').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row5seat3()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row5rad3').style.opacity=0.3;
+	document.getElementById('row5rad3').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row5seat4()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row5rad4').style.opacity=0.3;
+	document.getElementById('row5rad4').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row5seat5()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row5rad5').style.opacity=0.3;
+	document.getElementById('row5rad5').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row5seat6()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row5rad6').style.opacity=0.3;
+	document.getElementById('row5rad6').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row5seat7()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row5rad7').style.opacity=0.3;
+	document.getElementById('row5rad7').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row5seat8()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row5rad8').style.opacity=0.3;
+	document.getElementById('row5rad8').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row5seat9()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row5rad9').style.opacity=0.3;
+	document.getElementById('row5rad9').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row5seat10()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row5rad10').style.opacity=0.3;
+	document.getElementById('row5rad10').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row5seat11()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row5rad11').style.opacity=0.3;
+	document.getElementById('row5rad11').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row5seat12()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row5rad12').style.opacity=0.3;
+	document.getElementById('row5rad12').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row5seat13()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row5rad13').style.opacity=0.3;
+	document.getElementById('row5rad13').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row5seat14()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row5rad14').style.opacity=0.3;
+	document.getElementById('row5rad14').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row5seat15()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row5rad15').style.opacity=0.3;
+	document.getElementById('row5rad15').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row5seat16()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row5rad16').style.opacity=0.3;
+	document.getElementById('row5rad16').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row5seat17()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row5rad17').style.opacity=0.3;
+	document.getElementById('row5rad17').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row5seat18()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row5rad18').style.opacity=0.3;
+	document.getElementById('row5rad18').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row5seat19()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row5rad19').style.opacity=0.3;
+	document.getElementById('row5rad19').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row5seat20()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 400";
+	document.getElementById('row5rad20').style.opacity=0.3;
+	document.getElementById('row5rad20').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+
+function row6seat1()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row6rad1').style.opacity=0.3;
+	document.getElementById('row6rad1').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row6seat2()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row6rad2').style.opacity=0.3;
+	document.getElementById('row6rad2').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row6seat3()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row6rad3').style.opacity=0.3;
+	document.getElementById('row6rad3').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row6seat4()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row6rad4').style.opacity=0.3;
+	document.getElementById('row6rad4').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row6seat5()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row6rad5').style.opacity=0.3;
+	document.getElementById('row6rad5').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row6seat6()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row6rad6').style.opacity=0.3;
+	document.getElementById('row6rad6').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row6seat7()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row6rad7').style.opacity=0.3;
+	document.getElementById('row6rad7').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row6seat8()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row6rad8').style.opacity=0.3;
+	document.getElementById('row6rad8').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row6seat9()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row6rad9').style.opacity=0.3;
+	document.getElementById('row6rad9').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row6seat10()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row6rad10').style.opacity=0.3;
+	document.getElementById('row6rad10').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row6seat11()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row6rad11').style.opacity=0.3;
+	document.getElementById('row6rad11').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row6seat12()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row6rad12').style.opacity=0.3;
+	document.getElementById('row6rad12').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row6seat13()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row6rad13').style.opacity=0.3;
+	document.getElementById('row6rad13').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row6seat14()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row6rad14').style.opacity=0.3;
+	document.getElementById('row6rad14').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row6seat15()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row6rad15').style.opacity=0.3;
+	document.getElementById('row6rad15').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row6seat16()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row6rad16').style.opacity=0.3;
+	document.getElementById('row6rad16').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row6seat17()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row6rad17').style.opacity=0.3;
+	document.getElementById('row6rad17').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row6seat18()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row6rad18').style.opacity=0.3;
+	document.getElementById('row6rad18').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row6seat19()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row6rad19').style.opacity=0.3;
+	document.getElementById('row6rad19').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row6seat20()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row6rad20').style.opacity=0.3;
+	document.getElementById('row6rad20').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+
+function row7seat1()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row7rad1').style.opacity=0.3;
+	document.getElementById('row7rad1').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row7seat2()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row7rad2').style.opacity=0.3;
+	document.getElementById('row7rad2').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row7seat3()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row7rad3').style.opacity=0.3;
+	document.getElementById('row7rad3').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row7seat4()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row7row7rad4').style.opacity=0.3;
+	document.getElementById('row7rad4').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row7seat5()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row7rad5').style.opacity=0.3;
+	document.getElementById('row7rad5').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row7seat6()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row7rad6').style.opacity=0.3;
+	document.getElementById('row7rad6').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row7seat7()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row7rad7').style.opacity=0.3;
+	document.getElementById('row7rad7').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row7seat8()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row7rad8').style.opacity=0.3;
+	document.getElementById('row7rad8').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row7seat9()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row7rad9').style.opacity=0.3;
+	document.getElementById('row7rad9').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row7seat10()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row7rad10').style.opacity=0.3;
+	document.getElementById('row7rad10').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row7seat11()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row7rad11').style.opacity=0.3;
+	document.getElementById('row7rad11').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row7seat12()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row7rad12').style.opacity=0.3;
+	document.getElementById('row7rad12').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row7seat13()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row7rad13').style.opacity=0.3;
+	document.getElementById('row7rad13').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row7seat14()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row7rad14').style.opacity=0.3;
+	document.getElementById('row7rad14').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row7seat15()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row7rad15').style.opacity=0.3;
+	document.getElementById('row7rad15').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row7seat16()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row7rad16').style.opacity=0.3;
+	document.getElementById('row7rad16').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row7seat17()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row7rad17').style.opacity=0.3;
+	document.getElementById('row7rad17').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row7seat18()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row7rad18').style.opacity=0.3;
+	document.getElementById('row7rad18').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row7seat19()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row7rad19').style.opacity=0.3;
+	document.getElementById('row7rad19').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row7seat20()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row7rad20').style.opacity=0.3;
+	document.getElementById('row7rad20').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+
+
+function row8seat1()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row8rad1').style.opacity=0.3;
+	document.getElementById('row8rad1').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row8seat2()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row8rad2').style.opacity=0.3;
+	document.getElementById('row8rad2').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row8seat3()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row8rad3').style.opacity=0.3;
+	document.getElementById('row8rad3').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row8seat4()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row8rad4').style.opacity=0.3;
+	document.getElementById('row8rad4').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row8seat5()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row8rad5').style.opacity=0.3;
+	document.getElementById('row8rad5').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row8seat6()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row8rad6').style.opacity=0.3;
+	document.getElementById('row8rad6').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row8seat7()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row8rad7').style.opacity=0.3;
+	document.getElementById('row8rad7').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row8seat8()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row8rad8').style.opacity=0.3;
+	document.getElementById('row8rad8').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row8seat9()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row8rad9').style.opacity=0.3;
+	document.getElementById('row8rad9').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row8seat10()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row8rad10').style.opacity=0.3;
+	document.getElementById('row8rad10').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row8seat11()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row8rad11').style.opacity=0.3;
+	document.getElementById('row8rad11').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row8seat12()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row8rad12').style.opacity=0.3;
+	document.getElementById('row8rad12').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row8seat13()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row8rad13').style.opacity=0.3;
+	document.getElementById('row8rad13').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row8seat14()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row8rad14').style.opacity=0.3;
+	document.getElementById('row8rad14').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row8seat15()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row8rad15').style.opacity=0.3;
+	document.getElementById('row8rad15').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row8seat16()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row8rad16').style.opacity=0.3;
+	document.getElementById('row8rad16').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row8seat17()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row8rad17').style.opacity=0.3;
+	document.getElementById('row8rad17').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row8seat18()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row8rad18').style.opacity=0.3;
+	document.getElementById('row8rad18').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row8seat19()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row8rad19').style.opacity=0.3;
+	document.getElementById('row8rad19').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row8seat20()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 200";
+	document.getElementById('row8rad20').style.opacity=0.3;
+	document.getElementById('row8rad20').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+
+function row9seat1()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row9rad1').style.opacity=0.3;
+	document.getElementById('row9rad1').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row9seat2()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row9rad2').style.opacity=0.3;
+	document.getElementById('row9rad2').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row9seat3()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row9rad3').style.opacity=0.3;
+	document.getElementById('row9rad3').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row9seat4()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row9rad4').style.opacity=0.3;
+	document.getElementById('row9rad4').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row9seat5()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row9rad5').style.opacity=0.3;
+	document.getElementById('row9rad5').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row9seat6()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row9rad6').style.opacity=0.3;
+	document.getElementById('row9rad6').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row9seat7()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row9rad7').style.opacity=0.3;
+	document.getElementById('row9rad7').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row9seat8()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row9rad8').style.opacity=0.3;
+	document.getElementById('row9rad8').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row9seat9()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row9rad9').style.opacity=0.3;
+	document.getElementById('row9rad9').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row9seat10()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row9rad10').style.opacity=0.3;
+	document.getElementById('row9rad10').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row9seat11()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row9rad11').style.opacity=0.3;
+	document.getElementById('row9rad11').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row9seat12()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row9rad12').style.opacity=0.3;
+	document.getElementById('row9rad12').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row9seat13()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row9rad13').style.opacity=0.3;
+	document.getElementById('row9rad13').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row9seat14()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row9rad14').style.opacity=0.3;
+	document.getElementById('row9rad14').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row9seat15()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row9rad15').style.opacity=0.3;
+	document.getElementById('row9rad15').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row9seat16()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row9rad16').style.opacity=0.3;
+	document.getElementById('row9rad16').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row9seat17()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row9rad17').style.opacity=0.3;
+	document.getElementById('row9rad17').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row9seat18()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row9rad18').style.opacity=0.3;
+	document.getElementById('row9rad18').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row9seat19()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row9rad19').style.opacity=0.3;
+	document.getElementById('row9rad19').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row9seat20()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row9rad20').style.opacity=0.3;
+	document.getElementById('row9rad20').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+
+
+function row10seat1()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row10rad1').style.opacity=0.3;
+	document.getElementById('row10rad1').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row10seat2()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row10rad2').style.opacity=0.3;
+	document.getElementById('row10rad2').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row10seat3()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row10rad3').style.opacity=0.3;
+	document.getElementById('row10rad3').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row10seat4()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row10rad4').style.opacity=0.3;
+	document.getElementById('row10rad4').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row10seat5()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row10rad5').style.opacity=0.3;
+	document.getElementById('row10rad5').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row10seat6()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row10rad6').style.opacity=0.3;
+	document.getElementById('row10rad6').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row10seat7()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row10rad7').style.opacity=0.3;
+	document.getElementById('row10rad7').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row10seat8()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row10rad8').style.opacity=0.3;
+	document.getElementById('row10rad8').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row10seat9()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row10rad9').style.opacity=0.3;
+	document.getElementById('row10rad9').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row10seat10()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row10rad10').style.opacity=0.3;
+	document.getElementById('row10rad10').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row10seat11()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row10rad11').style.opacity=0.3;
+	document.getElementById('row10rad11').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row10seat12()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row10rad12').style.opacity=0.3;
+	document.getElementById('row10rad12').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row10seat13()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row10rad13').style.opacity=0.3;
+	document.getElementById('row10rad13').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row10seat14()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row10rad14').style.opacity=0.3;
+	document.getElementById('row10rad14').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row10seat15()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row10rad15').style.opacity=0.3;
+	document.getElementById('row10rad15').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row10seat16()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row10rad16').style.opacity=0.3;
+	document.getElementById('row10rad16').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row10seat17()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row10rad17').style.opacity=0.3;
+	document.getElementById('row10rad17').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row10seat18()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row10rad18').style.opacity=0.3;
+	document.getElementById('row10rad18').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row10seat19()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row10rad19').style.opacity=0.3;
+	document.getElementById('row10rad19').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+function row10seat20()
+{
+var text;
+var x=prompt("ARE YOU SURE!","Yes");
+switch(x)
+{
+case "Yes":
+	text="Price of this seat is 100";
+	document.getElementById('row10rad20').style.opacity=0.3;
+	document.getElementById('row10rad20').disabled=true;
+	break;
+case "No":
+	text="PLEASE SELECT THE SEAT";
+	break;
+default:
+	text="Invalid value. Please type either Yes or NO";
+}
+document.getElementById("demo").innerHTML=text;
+}
+
+</script>
+<hr></hr>
+<p id="demo">None</p>
+<hr></hr>
+<a href="C:\Users\GAMECHANGER\OneDrive\Desktop\html\payment.html">
+<button>PAY</button>
+</a>
+<a href="C:\Users\GAMECHANGER\OneDrive\Desktop\html\silver.html">
+<button>HOME</button>
+</a>
+</body>
+</html>
