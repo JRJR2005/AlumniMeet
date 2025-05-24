@@ -1,0 +1,232 @@
+<html>
+<head>
+<title>25 Celebration of BCA</title>
+</head>
+<style>
+div{
+text-align:center;
+background:darkblue;
+color:white;
+margine:25px solid red;
+padding:25px 25px;
+}
+img{
+text-align:left;
+border:2px solid gold;
+}
+td{
+text-align:center;
+background:darkblue;
+color:white;
+}
+table
+{
+padding:50px 50px;
+}
+body
+{
+background-image:url('https://lh3.googleusercontent.com/p/AF1QipOnWf_2xIqCxmNbTxumQVEj0Y4V-xCo96SPr4o6=s680-w680-h510');
+background-repeat:no-repeat;
+background-size:cover;
+}
+button{
+background:gold;
+color:red;
+height:50px;
+padding:10px 10px;
+transition:width 2s, height 2s;
+button-size:auto;
+}
+P{
+padding:5px 5px 5px 5px;
+background:gold;
+color:red;
+height:50px;
+transition:height 2s,width 4s;
+width:860px;
+content-position:center;
+font-size:35px;
+}
+div.ai
+{
+float:left;
+border-radius:15px;
+background-color:skyblue;
+color:darkblue;
+width:400px;
+height:20px;
+transition: width 1s, height 1s;
+font-size:19px;
+overflow:hidden;
+}
+div.ai:hover
+{
+border-radius:15px;
+background:skyblue;
+color:darkblue;
+height:460px;
+width:600px;
+position:relative;
+top:20px;
+left:10px;
+}
+th{
+border:2px solid blue;
+border-radius:15px;
+text-align:center;
+background:skyblue;
+opacity:0.7;
+color:white;
+padding:5px 5px;
+width:50px;
+height:20px;
+}
+textarea{
+border-radius:15px;
+border:3px solid black;
+width:500px;
+height:100px;
+}
+</style>
+<body>
+<div>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPzbT447n-4VZmtDbId0AMdWOT0S3Wo_b_1w&s" width=200 height=200>
+<h1>LOYOLA COLLEGE (AUTONOMYUS),CHENNAI<br>
+SILVER JUBILEE<br>
+25 YEARS OF B.C.A</h1>
+<div class="ai">
+<b>AI:</b> I am your Personal assistant today. How can I help you?</br><hr></hr>
+Select the topic i will direct you there
+<table id="aimenu">
+<tr><th onclick="market()"><a href="C:\Users\GAMECHANGER\OneDrive\Desktop\html\market.html">MARKET</a></th>
+<th onclick="sponser()"><a href="C:\Users\GAMECHANGER\OneDrive\Desktop\html\support.html">SPONSERSHIP</a></th>
+<th onclick="course()"><a href="C:\Users\GAMECHANGER\OneDrive\Desktop\html\course.html">NEW COURSES</a></th>
+<th onclick="vipseat()"><a href="C:\Users\GAMECHANGER\OneDrive\Desktop\html\seat.html">SEAT PREBOOKING</a></th></tr>
+<tr>
+<th><a href="C:\Users\GAMECHANGER\OneDrive\Desktop\html\silver.html">HOME</a></th>
+<th onclick="alumnimem()"><a href="C:\Users\GAMECHANGER\OneDrive\Desktop\html\aluminimem.html">ALUMNI MEMBERSHIP</a></th>
+<th onclick="contact()">CONTACT</th>
+<th onclick="respap()"><a href="C:\Users\GAMECHANGER\OneDrive\Desktop\html\respap.html">RESEARCH PAPER</a></th>
+</tr>
+<tr>
+<th onclick="fora()"><a href="C:\Users\GAMECHANGER\OneDrive\Desktop\html\seat.html">FORA</a></th>
+<th onclick="alumnireg()"><a href="C:\Users\GAMECHANGER\OneDrive\Desktop\html\aluminireg.html">ALUMNI REGISTRATION</a></th>
+<th onclick="alumnitalk()">ALUMNI TALK</th>
+<th onclick="gallery()"><a href="C:\Users\GAMECHANGER\OneDrive\Desktop\html\gallery.html">DOWNLOAD PHOTOS</a></th>
+</tr>
+</table>
+<hr></hr>
+<textarea id="alumni"></textarea>
+<a href="C:\Users\GAMECHANGER\OneDrive\Desktop\html\silver.html"><button id="exit">Exit</button></a>	
+</div>
+<marquee><p id="demo"></p></marquee>
+<script>
+const time=new Date();
+document.getElementById("demo").innerHTML=time;
+</script>
+</div>
+<script>
+function market()
+{
+document.getElementById('alumni').innerHTML="College marketplaces can be physical or virtual spaces where students can buy, sell, or trade goods and services.  This can include used textbooks, furniture, clothes, electronics, or even things like tutoring or event tickets. They provide a convenient way for students to save money and find what they need close to campus.      Want to register, click the title";
+}
+function sponser()
+{
+document.getElementById('alumni').innerHTML="College alumni sponsorship allows graduates to give back to their alma mater and support current students. This can come in financial forms, like scholarships, or through professional guidance and mentorship. In return, sponsors gain recognition and access to a talented pool of potential hires. It's a win-win for both alumni and the university.      Want to register, click the title";
+}
+function course()
+{
+document.getElementById('alumni').innerHTML="Many colleges update their course offerings each year to keep pace with evolving fields and student interests. These new courses could span a variety of disciplines, from data science and cybersecurity to digital marketing and social entrepreneurship. By introducing these fresh options, colleges aim to equip students with the knowledge and skills they need to thrive in the ever-changing job market.      Want to register, click the title";
+
+}
+function alumnimem()
+{
+document.getElementById('alumni').innerHTML="College alumni membership offers a way for graduates to stay connected with their alma mater and fellow alumni. It can provide access to career resources, networking events, and exclusive benefits. Often, there are different membership levels, with lifetime options available for those who want to give back to their school in a more substantial way.      Want to register, click the title";
+}
+function respap()
+{
+document.getElementById('alumni').innerHTML="College research papers often build upon the foundation laid by previous year projects. These prior projects can provide a springboard for a more focused research question or methodology. By reviewing past student work, you can gain valuable insights into what's feasible, identify gaps in knowledge, and refine your own research approach. This not only strengthens your paper's originality but also demonstrates an understanding of the existing research landscape in your field.      Want to register, click the title";
+}
+function contact()
+{
+document.getElementById('alumni').innerHTML="For further information: Contact:920-----90 Prof:------ Contact:870-----45 Prof:xxxxxxx";
+}
+function gallery()
+{
+document.getElementById('alumni').innerHTML="The college photo gallery overflows with memories. From bleary-eyed dorm room selfies to triumphant graduation photos, each image captures a piece of the whirlwind that is college life.  There are candid moments of late-night study sessions fueled by pizza, blurry celebrations, and the pure joy of victorious team wins. Scrolling through the gallery is like flipping through the pages of a well-worn yearbook, a vibrant reminder of the friendships forged and the experiences that made college unforgettable.     Want to register, click the title";
+}
+function alumnireg()
+{
+document.getElementById('alumni').innerHTML="College alumni registration is a process for former students to connect with their alma mater. By registering, graduates can stay updated on college news and events, access career resources, and reconnect with classmates. This allows them to stay involved in the college community and give back to future generations.   Want to register, click the title";
+}
+function fora()
+{
+document.getElementById('alumni').innerHTML="College forums are online communities where students, faculty, and alumni can connect and share information. They offer a platform to discuss academics, campus life, extracurricular activities, and college admissions. These forums can be a valuable resource for prospective students to learn about a college's culture and get advice from current students.    Want to register, click the title";
+}
+function alumnitalk()
+{
+document.getElementById('alumni').innerHTML="An alumni talk is a chance for a college graduate to return to their alma mater and share their experiences with current students. These talks often focus on the speaker's career path, the lessons they learned in college, and advice for navigating the future. They can be a source of inspiration and guidance for students, reminding them of the possibilities that lie ahead.";
+}
+</script>
+<table>
+<tr>
+<td>2000-2003:<br><img src="https://i.ytimg.com/vi/cbRQgGB0i0A/maxresdefault.jpg" width=200 height=200></td>
+
+<td>2001-2004:<br><img src="https://www.education.gov.in/sites/upload_files/mhrd/files/home-slider-img/hrm.jpg" width=200 height=200></td>
+
+<td>2002-2005:<br><img src="https://www.lcechennai.edu.in/gallery/2020/groupphoto/2009.jpg" width=200 height=200></td>
+
+<td>2003-2006:<br><img src="https://www.lcechennai.edu.in/gallery/2015Batch/12.jpg" width=200 height=200></td>
+
+<td>2004-2007:<br><img src="https://www.lcechennai.edu.in/gallery/2020/groupphoto/2018.jpg" width=200 height=200></td>
+
+<td>2005-2008:<br><img src="https://www.lcechennai.edu.in/gallery/2020/groupphoto/2015.jpg" width=200 height=200></td>
+
+<td>2006-2009:<br><img src="https://www.lcechennai.edu.in/gallery/2020/groupphoto/2019.jpg" width=200 height=200></td>
+</tr>
+<tr>
+<td>2007-2010:<br><img src="https://i.ytimg.com/vi/cbRQgGB0i0A/maxresdefault.jpg" width=200 height=200></td>
+
+<td>2008-2011:<br><img src="https://www.education.gov.in/sites/upload_files/mhrd/files/home-slider-img/hrm.jpg" width=200 height=200></td>
+
+<td>2009-2012:<br><img src="https://www.lcechennai.edu.in/gallery/2020/groupphoto/2009.jpg" width=200 height=200></td>
+
+<td>2010-2013:<br><img src="https://www.lcechennai.edu.in/gallery/2015Batch/12.jpg" width=200 height=200></td>
+
+<td>2011-2014:<br><img src="https://www.lcechennai.edu.in/gallery/2020/groupphoto/2018.jpg" width=200 height=200></td>
+
+<td>2012-2015:<br><img src="https://www.lcechennai.edu.in/gallery/2020/groupphoto/2015.jpg" width=200 height=200></td>
+
+<td>2013-2016:<br><img src="https://www.lcechennai.edu.in/gallery/2020/groupphoto/2010.jpg" width=200 height=200></td>
+</tr>
+<tr>
+<td>2014-2017:<br><img src="https://i.ytimg.com/vi/cbRQgGB0i0A/maxresdefault.jpg" width=200 height=200></td>
+
+<td>2015-2018:<br><img src="https://www.lcechennai.edu.in/gallery/2020/groupphoto/2009.jpg" width=200 height=200></td>
+
+<td>2016-2019:<br><img src="https://www.lcechennai.edu.in/gallery/2020/groupphoto/2019.jpg" width=200 height=200></td>
+
+<td>2017-2020:<br><img src="https://www.lcechennai.edu.in/gallery/2015Batch/12.jpg" width=200 height=200></td>
+
+<td>2018-2021:<br><img src="https://www.lcechennai.edu.in/gallery/2020/groupphoto/2018.jpg" width=200 height=200></td>
+
+<td>2019-2022:<br><img src="https://www.lcechennai.edu.in/gallery/2020/groupphoto/2015.jpg" width=200 height=200></td>
+
+<td>2020-2023:<br><img src="https://www.lcechennai.edu.in/gallery/2020/groupphoto/2010.jpg" width=200 height=200></td>
+</tr>
+<tr>
+
+<td colspan="2"><img src="https://i.ytimg.com/vi/cbRQgGB0i0A/maxresdefault.jpg" width=200 height=200></td>
+
+<td colspan="1">2022-2025:<br><img src="https://www.education.gov.in/sites/upload_files/mhrd/files/home-slider-img/hrm.jpg" width=200 height=200></td>
+
+<td colspan="2">2023-2026:<br><img src="https://www.lcechennai.edu.in/gallery/2020/groupphoto/2010.jpg" width=200 height=200></td>
+
+<td colspan="2">2024-2027:<br><img src="https://www.lcechennai.edu.in/gallery/2020/groupphoto/2015.jpg" width=200 height=200></td>
+</tr>
+</table>
+<div>
+MADE BY: TEAM FUTURE
+</div>
+</body>
+</html>
